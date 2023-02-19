@@ -1,0 +1,23 @@
+<h3>Car Insurance form</h3>
+<hr>
+
+<form action="" method="post">
+    {%csrf_token%}
+    <div>
+        <label for="Make">Make: {{form.make}}</label>
+        
+    </div>
+    <div>
+        <label for="Model">Model: {{form.model}}</label>
+        
+    </div>
+    <div>
+        <label for="Year">Year: {{form.year}}</label>
+        
+    </div>
+    <div>
+        <label for="Mileage">Mileage: {{form.mileage}}</label>
+        {{form.errors}}
+    </div>
+    <input type="submit" value="Submit">
+</form>
